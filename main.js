@@ -24,7 +24,7 @@ function initialize() {
         };
 
         mainWindow = new BrowserWindow(windowOptions);
-        mainWindow.loadURL(path.join('file://', __dirname, './views/index.html'));
+        mainWindow.loadURL(path.join('file://', __dirname, './views/content/index.html'));
 
         mainWindow.once('ready-to-show', () => {
             mainWindow.maximize();
